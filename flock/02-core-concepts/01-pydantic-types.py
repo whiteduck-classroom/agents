@@ -23,10 +23,12 @@ from flock.core.flock_registry import (
 )
 from pydantic import BaseModel, Field  # Import Pydantic components
 from rich.console import Console
+from flock.core.logging import configure_logging
 
 # --- Configuration ---
+configure_logging(flock_level="DEBUG",external_level="NO_LOG")
 console = Console()
-MODEL = os.getenv("DEFAULT_MODEL", "openai/gpt-4o")
+MODEL = os.getenv("DEFAULT_MODEL", "azure/gpt-4.1")
 console.print(f"[grey50]Using model: {MODEL}[/grey50]")
 
 
@@ -176,3 +178,5 @@ except Exception as e:
 #    - Define a new `@flock_type class Equipment(BaseModel): armor: str; magical_items: list[str]`.
 #    - Add `equipment: Equipment` as a field to `FantasyCharacter`.
 #    Run the script. Does Flock handle generating the nested structure?
+#    
+# 4. Test out different configure_logging settings.

@@ -22,7 +22,7 @@ from rich.table import Table
 
 # --- Configuration ---
 console = Console()
-MODEL = os.getenv("DEFAULT_MODEL", "openai/gpt-4o")
+MODEL = os.getenv("DEFAULT_MODEL", "azure/gpt-4.1")
 console.print(f"[grey50]Using model: {MODEL}[/grey50]")
 
 # --- Create Flock Instance ---

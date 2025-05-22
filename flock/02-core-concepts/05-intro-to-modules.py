@@ -38,7 +38,7 @@ from tools.pet_tools import (
 
 # --- Configuration ---
 console = Console()
-MODEL = os.getenv("DEFAULT_MODEL", "openai/gpt-4o")
+MODEL = os.getenv("DEFAULT_MODEL", "azure/gpt-4.1")
 console.print(f"[grey50]Using model: {MODEL}[/grey50]")
 
 logger = get_logger("pet_diary")

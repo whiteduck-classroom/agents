@@ -2,7 +2,7 @@ from flock.core import Flock, FlockFactory
 from flock.modules.memory.memory_module import MemoryModuleConfig
 from flock.tools import web_tools
 
-MODEL = "openai/gpt-4o"
+MODEL = "azure/gpt-4.1"
 
 
 

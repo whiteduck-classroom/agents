@@ -1,7 +1,7 @@
 from flock.cli.utils import print_header, print_subheader, print_success
 from flock.core import Flock, FlockFactory
 
-MODEL = "openai/gpt-4o"
+MODEL = "azure/gpt-4.1"
 
 flock = Flock(
     name="example_02", description="The flock input and output syntax", model=MODEL

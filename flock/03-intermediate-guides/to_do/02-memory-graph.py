@@ -2,7 +2,7 @@ from flock.core import Flock, FlockFactory
 from flock.modules.memory.memory_module import MemoryModuleConfig
 from flock.tools import web_tools
 
-MODEL = "openai/gpt-4o"
+MODEL = "azure/gpt-4.1"
 
 # docker run -p 7687:7687 memgraph/memgraph-mage:latest --schema-info-enabled=True
 # Please start memgraph before running this script

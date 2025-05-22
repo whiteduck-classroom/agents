@@ -7,7 +7,7 @@ import os
 
 from flock.core import Flock, FlockFactory
 
-MODEL = os.getenv("DEFAULT_MODEL", "openai/gpt-4o")
+MODEL = os.getenv("DEFAULT_MODEL", "azure/gpt-4.1")
 
 
 # --------------------------------

@@ -1,4 +1,5 @@
 from flock.core import Flock, FlockFactory
+from flock.core.logging import configure_logging
 
 # --------------------------------
 # Define the model
@@ -6,7 +7,8 @@ from flock.core import Flock, FlockFactory
 # Flock uses litellm to talk to LLMs
 # Please consult the litellm documentation for valid IDs:
 # https://docs.litellm.ai/docs/providers
-MODEL = "openai/gpt-4o"
+configure_logging(flock_level="NO_LOG",external_level="NO_LOG")
+MODEL = "azure/gpt-4.1"
 
 
 # --------------------------------

@@ -11,7 +11,7 @@ from flock.core.flock_registry import (
 )
 from pydantic import BaseModel, Field  # Import Pydantic components
 
-MODEL = os.getenv("DEFAULT_MODEL", "openai/gpt-4o")
+MODEL = os.getenv("DEFAULT_MODEL", "azure/gpt-4.1")
 
 # --------------------------------
 # Create a new Flock instance

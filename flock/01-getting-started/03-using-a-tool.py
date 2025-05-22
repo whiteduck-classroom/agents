@@ -3,7 +3,7 @@ from flock.core.logging.formatters.themes import OutputTheme
 from flock.tools import code_tools, web_tools
 
 # Define the DEFAULT_MODEL in your .env file
-flock = Flock(model="openai/gpt-4o")
+flock = Flock(model="azure/gpt-4.1")
 
 # --------------------------------
 # Create an agent
@@ -20,7 +20,7 @@ agent = FlockFactory.create_default_agent(
     name="my_agent",
     input="url",
     output="title, headings: list[str],"
-    "entities_and_metadata: list[dict[]],"
+    "entities_and_metadata: list[dict[str,str]],"
     "type:Literal['news', 'blog', 'opinion piece', 'tweet']",
     tools=[web_tools.web_content_as_markdown],
     enable_rich_tables=True,  # Instead of the json output, you can use the rich library to render the output as a table

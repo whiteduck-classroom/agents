@@ -7,7 +7,7 @@ from flock.modules.performance.metrics_module import (
     MetricsModuleConfig,
 )
 
-MODEL = "openai/gpt-4o"
+MODEL = "azure/gpt-4.1"
 flock = Flock(name="flock_architecture", model=MODEL)
 
 # --------------------------------
